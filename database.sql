@@ -162,4 +162,5 @@ ALTER TABLE [Order] ADD FOREIGN KEY ([courier_id]) REFERENCES [Courier] ([id]);
 ALTER TABLE [UserAddress] ADD FOREIGN KEY ([user_id]) REFERENCES [User] ([id]);
 
 /* Favourite */
+ALTER TABLE [Favourite] ADD FOREIGN KEY ([user_id]) REFERENCES [User] ([id])
 ALTER TABLE [Favourite] ADD FOREIGN KEY ([product_id]) REFERENCES [Product] ([id]);
